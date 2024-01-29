@@ -1,5 +1,6 @@
 import Footbar from "./_components/(main)/Footbar";
 import Navbar from "./_components/(main)/Navbar";
+import StyledComponentsRegistry from "./registry";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en" >
       <body style={{margin: '0px', width: '100%', height: '300%'}}>
         <Navbar></Navbar>
-        {children}
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
         <Footbar></Footbar>
       </body>
     </html>
