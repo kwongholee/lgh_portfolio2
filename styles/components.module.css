@@ -1,0 +1,13 @@
+.textEnglish {
+  color: black;
+  font-family: Itim;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.textKorean {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
