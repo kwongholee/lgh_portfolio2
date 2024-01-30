@@ -11,3 +11,41 @@
   font-size: 30px;
   text-align: center;
 }
+
+.specialBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(224, 85, 210, 0.80) 0%, rgba(234, 168, 70, 0.80) 100%);
+  color: white;
+  text-align: center;
+  font-family: Itim;
+  cursor: pointer;
+}
+.specialBtn:hover {
+  background: linear-gradient(90deg, rgba(224, 85, 210, 0.80) 0%, rgba(234, 168, 70, 0.80) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 2px solid rgba(224, 85, 210, 0.80);
+}
+
+.naverInput {
+  border-radius: 5px;
+  border: 2px solid #42F092;
+  background: rgba(217, 217, 217, 0.00);
+  width: 850px;
+  height: 50px;
+}
+.naverInput:focus {
+  border: 2px solid #42F092;
+  border-radius: 5px;
+  background: rgba(217, 217, 217, 0.00);
+  width: 850px;
+  height: 50px;
+}
