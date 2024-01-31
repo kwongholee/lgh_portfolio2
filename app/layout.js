@@ -1,7 +1,7 @@
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Footbar from "./_components/(main)/Footbar";
-import Navbar from "./_components/(main)/Navbar";
+import Footbar from "./_components/Footbar";
+import Navbar from "./_components/Navbar";
 import StyledComponentsRegistry from "./registry";
 config.autoAddCss = false;
 
