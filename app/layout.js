@@ -1,6 +1,9 @@
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import Footbar from "./_components/(main)/Footbar";
 import Navbar from "./_components/(main)/Navbar";
 import StyledComponentsRegistry from "./registry";
+config.autoAddCss = false;
 
 export const metadata = {
   title: "LGH Portfolio",
@@ -15,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
-      <body style={{margin: '0px', width: '100%', height: '300%'}}>
+      <body style={{margin: '0px', height: '300%'}}>
         <Navbar></Navbar>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
         <Footbar></Footbar>
