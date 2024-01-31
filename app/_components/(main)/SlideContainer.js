@@ -2,10 +2,19 @@
 
 import { useState } from "react";
 import style from '../../../styles/main.module.css';
+import Image from "next/image";
+
+
 import first from '../../../public/image/main/1.jpg';
+import second from '../../../public/image/main/2.jpg';
+import third from '../../../public/image/main/3.jpg';
+import fourth from '../../../public/image/main/4.jpg';
+import fifth from '../../../public/image/main/5.jpg';
+import sixth from '../../../public/image/main/6.jpg';
+import seventh from '../../../public/image/main/7.jpg';
 
 export default function SlideContainer() {
-  let [num, setNum] = useState([1,2,3,4,5,6,7]);
+  let [num, setNum] = useState([first, second, third, fourth, fifth, sixth, seventh]);
 
   return(
     <div style={{overflow: 'hidden'}}>
@@ -13,8 +22,8 @@ export default function SlideContainer() {
         {
           num.map((a,i) => {
             return(
-              <div className={style.slideImg}>
-                <img src={first} draggable="false" alt={i} />
+              <div className={style.slideImg} key={i}>
+                <Image src={a} draggable="false" alt={i} />
               </div>
             )
           })
