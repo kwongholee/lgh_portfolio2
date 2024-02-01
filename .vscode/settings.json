@@ -7,6 +7,7 @@
     "_store": "Container",
     "_types": "Typescript",
     "_utils": "Utils",
+    "_libs": "lib",
     "(routes)": "Routes",
   }
 }
