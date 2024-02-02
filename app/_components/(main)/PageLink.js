@@ -17,13 +17,13 @@ export default function PageLink({num}) {
   }, []);
 
   return(
-    <div>
+    <div style={{textAlign: "center", display: "inline-block"}}>
       <p>{instruction.korean}</p>
       <div className={style.pageLink} onClick={() => {router.push(`/${instruction.route}`)}}>
         {
-          num == 1 ? <FontAwesomeIcon icon={faArrowLeft} /> :
-          num == 2 ? <FontAwesomeIcon icon={faArrowDown} /> :
-          <FontAwesomeIcon icon={faArrowRight} />
+          num == 1 ? <FontAwesomeIcon icon={faArrowLeft} size="2x" /> :
+          num == 2 ? <FontAwesomeIcon icon={faArrowDown} size="2x" /> :
+          <FontAwesomeIcon icon={faArrowRight} size="2x" />
         }
         <h2>{instruction.english}</h2>
       </div>

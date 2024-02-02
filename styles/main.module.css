@@ -19,17 +19,22 @@
 .circleImage {
   cursor: pointer;
   transition: all 0.5s;
+  display: inline-block;
 }
 
 .pageLink {
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 50px;
   justify-content: center;
+  align-items: center;
   border-radius: 10px;
   background: #121212;
   color: white;
   font-family: Itim;
+  width: 400px;
+  height: 70px;
 }
 .pageLink:hover {
   background: #222;

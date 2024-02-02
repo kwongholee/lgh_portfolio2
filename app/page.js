@@ -36,9 +36,20 @@ export default function Home() {
       
       <div>
         <CircleImage></CircleImage>
+        <div style={{display: "inline-block"}}>
+          <div>
+            <h1><strong>안녕하세요~!~!</strong></h1>
+            <h2>(나를 소개하는 한마디)</h2>
+            <h1>개발자 이광호입니다!</h1>
+          </div>
+
+          <div>
+
+          </div>
+        </div>
       </div>
 
-      <div>
+      <div style={{textAlign: "center", marginBottom: "50px"}}>
         {
           linkNum.map((a,i) => <PageLink num={a} key={i} />)
         }
