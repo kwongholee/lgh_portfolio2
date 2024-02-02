@@ -15,8 +15,8 @@ export default function Arrowicon(props) {
     <div>
       {
         direction == "Left" 
-        ? <FontAwesomeIcon icon={faArrowLeft} style={{cursor: "pointer"}} /> 
-        : <FontAwesomeIcon icon={faArrowRight} style={{cursor: "pointer"}} />
+        ? <FontAwesomeIcon icon={faArrowLeft} style={{cursor: "pointer"}} size="3x" /> 
+        : <FontAwesomeIcon icon={faArrowRight} style={{cursor: "pointer"}} size="3x" />
       }
     </div>
   )
