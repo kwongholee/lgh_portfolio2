@@ -17,7 +17,7 @@ export default function PageLink({num}) {
   }, []);
 
   return(
-    <div style={{textAlign: "center", display: "inline-block"}}>
+    <div style={{textAlign: "center", display: "inline-block", marginLeft: "50px"}}>
       <p>{instruction.korean}</p>
       <div className={style.pageLink} onClick={() => {router.push(`/${instruction.route}`)}}>
         {

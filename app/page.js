@@ -34,9 +34,9 @@ export default function Home() {
         <h1> Down!</h1>
       </div>
       
-      <div>
+      <div style={{textAlign: "center"}}>
         <CircleImage></CircleImage>
-        <div style={{display: "inline-block"}}>
+        <div style={{display: "inline-block", textAlign: "left"}}>
           <div>
             <h1><strong>안녕하세요~!~!</strong></h1>
             <h2>(나를 소개하는 한마디)</h2>
@@ -44,7 +44,15 @@ export default function Home() {
           </div>
 
           <div>
-
+            <p>나를 소개하는 한 마디를 바탕으로</p>
+            <p>내 이야기 쭉 전개하고</p>
+            <p>만들고 싶은거, 관심 있는 분야 이야기하기</p>
+            <p>만들고 싶은거, 관심 있는 분야 이야기하기</p>
+            <p>만들고 싶은거, 관심 있는 분야 이야기하기</p>
+          </div>
+          
+          <div>
+            <h3>자세한 이야기는 Introduce나 Works에서 확인 가능합니다!</h3>
           </div>
         </div>
       </div>

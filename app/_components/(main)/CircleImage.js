@@ -1,11 +1,15 @@
 'use client';
 
 import style from '../../../styles/main.module.css';
+import profileImage from '../../../public/image/main/1.jpg';
+import Image from 'next/image';
 
 export default function CircleImage() {
   return(
-    <svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 350 350" className={style.circleImage}>
-      <circle cx="175" cy="175" r="165.5" stroke="black"/>
-    </svg>
+    <div className={style.circleWrapper}>
+      <div className={style.circle}>
+        <Image src={profileImage} draggable={false} />
+      </div>
+    </div>
   )
 }
