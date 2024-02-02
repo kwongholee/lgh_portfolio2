@@ -26,7 +26,10 @@ export default async function Question() {
         </div>
       </div>
 
-      <Contentbox></Contentbox>
+      <div>
+        <Contentbox answered={true}></Contentbox>
+        <Contentbox answered={false}></Contentbox>
+      </div>
     </div>
   )
 }
