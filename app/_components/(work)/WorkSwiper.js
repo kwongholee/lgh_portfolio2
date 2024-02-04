@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 import './WorkSwiper.css';
 
 import { Pagination, Navigation } from 'swiper/modules';
+import Contentbox from './Contentbox';
 
 export default function WorkSwiper() {
   const navigationPrevRef = React.useRef(null);
@@ -35,19 +36,26 @@ export default function WorkSwiper() {
         }}
         modules={[Pagination, Navigation]}
         className="mySwiper"
+        onBeforeInit={(swiper) => {
+          swiper.params.navigation.prevEl = navigationPrevRef.current;
+          swiper.params.navigation.nextEl = navigationNextRef.current;
+        }}
+        onSwiper={(swiper) => {
+          setTimeout(() => {
+            swiper.params.navigation.prevEl = navigationPrevRef.current;
+            swiper.params.navigation.nextEl = navigationNextRef.current;
+            swiper.navigation.destroy();
+            swiper.navigation.init();
+            swiper.navigation.update();
+          });
+        }}
       >
         <div ref={navigationNextRef} className="swiper-button-next swiper-nav-ctrl simp-next cursor-pointer">
           <span className="simple-btn right"></span>
         </div>
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide><Contentbox /></SwiperSlide>
+        <SwiperSlide><Contentbox /></SwiperSlide>
+        <SwiperSlide><Contentbox /></SwiperSlide>
         <div ref={navigationPrevRef} className="swiper-button-prev swiper-nav-ctrl simp-prev cursor-pointer">
           <span className="simple-btn"></span>
         </div>
