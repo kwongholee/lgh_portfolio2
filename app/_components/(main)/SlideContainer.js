@@ -19,13 +19,13 @@ export default function SlideContainer() {
     const setVW = setInterval(() => {
       if(viewwidth == -500) setViewwidth(0);
       else setViewwidth(viewwidth - 100);
-    }, 1500);
+    }, 2000);
     return () => clearInterval(setVW);
   }, [viewwidth]);
 
   return(
     <div style={{overflow: 'hidden'}}>
-      <div style={{width: '600vw', transform: `translateX(${viewwidth}vw)`}}>
+      <div style={{width: '600vw', transform: `translateX(${viewwidth}vw)`, transition: "transform 0.5s"}}>
         {
           num.map((a,i) => {
             return(
