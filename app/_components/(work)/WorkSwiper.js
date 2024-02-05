@@ -11,11 +11,13 @@ import './WorkSwiper.css';
 
 import { Pagination, Navigation } from 'swiper/modules';
 import Contentbox from './Contentbox';
+import data from '../../_utils/work/data';
 
 export default function WorkSwiper() {
   const navigationPrevRef = React.useRef(null);
   const navigationNextRef = React.useRef(null);
   const [pageLoaded, setPageLoaded] = React.useState(false);
+  let [contents, setContents] = React.useState(data);
   
   React.useEffect(() => {
     setPageLoaded(true);
@@ -53,9 +55,15 @@ export default function WorkSwiper() {
         <div ref={navigationNextRef} className="swiper-button-next swiper-nav-ctrl simp-next cursor-pointer">
           <span className="simple-btn right"></span>
         </div>
-        <SwiperSlide><Contentbox /></SwiperSlide>
-        <SwiperSlide><Contentbox /></SwiperSlide>
-        <SwiperSlide><Contentbox /></SwiperSlide>
+        {
+          contents.map((a,i) => {
+            return(
+              <SwiperSlide key={i}>
+                <Contentbox content={a} />
+              </SwiperSlide>
+            )
+          })
+        }
         <div ref={navigationPrevRef} className="swiper-button-prev swiper-nav-ctrl simp-prev cursor-pointer">
           <span className="simple-btn"></span>
         </div>
