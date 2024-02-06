@@ -1,8 +1,8 @@
 'use client';
 
 import Textbox from "@/app/_components/Textbox";
-import style from '../../../styles/work.module.css';
 import WorkSwiper from "@/app/_components/(work)/WorkSwiper";
+import '../../globals.css'
 
 export default function Work() {
 
@@ -10,7 +10,7 @@ export default function Work() {
     <div>
       <Textbox  english={"My Works"}></Textbox>
 
-      <div>
+      <div className="mt-20 mb-20">
         <WorkSwiper />
       </div>
     </div>

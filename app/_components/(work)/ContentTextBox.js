@@ -9,10 +9,10 @@ export default function ContentTextBox({content}) {
 
   return(
     <div className={style.contentTextBox}>
-      <h1>{data.pagename}</h1>
-      <h2>{data.pageInstruction}</h2>
-      <h3>{data.techStack}</h3>
-      <Link href={data.githubLink}>깃허브 링크 주소</Link>
+      <h1 style={{fontSize: "25px", textAlign: "center"}}><strong>{data.pagename}</strong></h1>
+      <h2>소개: {data.pageInstruction}</h2>
+      <h5>사용한 기술: {data.techStack}</h5>
+      <Link href={data.githubLink}>Go to Github Link</Link>
     </div>
   )
 }
