@@ -10,8 +10,8 @@ import 'swiper/css/navigation';
 import './WorkSwiper.css';
 
 import { Pagination, Navigation } from 'swiper/modules';
-import Contentbox from './Contentbox';
-import data from '../../_utils/work/data';
+import Contentbox from '../ContentBox/Contentbox';
+import data from '../../../_utils/work/data';
 
 export default function WorkSwiper() {
   const navigationPrevRef = React.useRef(null);

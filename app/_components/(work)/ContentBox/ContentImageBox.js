@@ -1,4 +1,4 @@
-import style from '../../../styles/work.module.css';
+import style from '../../../../styles/work.module.css';
 import Image from "next/image";
 
 export default function ContentImageBox(props) {

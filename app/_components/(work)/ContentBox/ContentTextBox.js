@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import style from '../../../styles/work.module.css';
+import style from '../../../../styles/work.module.css';
 import Link from 'next/link';
 
 export default function ContentTextBox({content}) {

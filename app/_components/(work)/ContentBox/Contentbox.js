@@ -1,6 +1,6 @@
 'use client';
 
-import style from '../../../styles/work.module.css';
+import style from '../../../../styles/work.module.css';
 import ContentImageBox from './ContentImageBox';
 import ContentTextBox from './ContentTextBox';
 import { useState } from 'react';
