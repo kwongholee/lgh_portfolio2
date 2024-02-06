@@ -1,7 +1,7 @@
 'use client';
 
 import Textbox from "@/app/_components/Textbox";
-import WorkSwiper from "@/app/_components/(work)/WorkSwiper";
+import WorkSwiper from "@/app/_components/(work)/WorkSwiper/WorkSwiper";
 import '../../globals.css'
 
 export default function Work() {
