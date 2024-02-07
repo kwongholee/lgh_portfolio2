@@ -1,8 +1,8 @@
-import Contentbox from "@/app/_components/(question)/Contentbox";
-import Naverbtn from "@/app/_components/(question)/Naverbtn";
-import Naverdropdown from "@/app/_components/(question)/Naverdropdown";
-import Naverinput from "@/app/_components/(question)/Naverinput";
-import Specialbtn from "@/app/_components/(question)/Specialbtn";
+import Contentbox from "@/app/_components/(question)/list/Contentbox";
+import Naverbtn from "@/app/_components/(question)/list/Naverbtn";
+import Naverdropdown from "@/app/_components/(question)/list/Naverdropdown";
+import Naverinput from "@/app/_components/(question)/list/Naverinput";
+import Specialbtn from "@/app/_components/(question)/list/Specialbtn";
 import Textbox from "@/app/_components/Textbox";
 import { connectMongo } from "@/app/_utils/connectMongo";
 
