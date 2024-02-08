@@ -3,6 +3,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import Footbar from "./_components/Footbar";
 import Navbar from "./_components/Navbar";
 import StyledComponentsRegistry from "./registry";
+import { Providers } from "./provider";
 config.autoAddCss = false;
 
 export const metadata = {
@@ -19,9 +20,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" >
       <body style={{margin: '0px', height: '300%'}}>
-        <Navbar></Navbar>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-        <Footbar></Footbar>
+        <Providers>
+          <Navbar></Navbar>
+          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+          <Footbar></Footbar>
+        </Providers>
       </body>
     </html>
   );
