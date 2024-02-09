@@ -7,6 +7,9 @@ const Box = styled.div`
   height: 100px;
   background: rgba(66, 240, 146, 0.40);
   box-shadow: 3px 4px 3px 1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 const AnsweredBox = styled.div`
@@ -14,6 +17,9 @@ const AnsweredBox = styled.div`
   height: 100px;
   background: rgba(66, 177, 240, 0.4);
   box-shadow: 3px 4px 3px 1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export default function Contentbox(props) {

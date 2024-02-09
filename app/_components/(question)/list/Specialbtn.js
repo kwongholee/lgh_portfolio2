@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react";
-import style from '../../../styles/components.module.css';
+import style from '../../../../styles/components.module.css';
 
 export default function Specialbtn(props) {
   let router = useRouter();
