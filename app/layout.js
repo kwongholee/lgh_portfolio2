@@ -5,6 +5,7 @@ import Navbar from "./_components/Navbar";
 import StyledComponentsRegistry from "./registry";
 import { Providers } from "./provider";
 import {AppRouterCacheProvider} from '@mui/material-nextjs/v14-appRouter';
+import StoreProvider from "./StoreProvider";
 config.autoAddCss = false;
 
 export const metadata = {
@@ -23,9 +24,11 @@ export default function RootLayout({ children }) {
       <body style={{margin: '0px', height: '300%'}}>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <Providers>
-            <Navbar></Navbar>
-            <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-            <Footbar></Footbar>
+            <StoreProvider>
+              <Navbar></Navbar>
+              <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+              <Footbar></Footbar>
+            </StoreProvider>
           </Providers>
         </AppRouterCacheProvider>
       </body>
